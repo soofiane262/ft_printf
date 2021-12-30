@@ -57,7 +57,7 @@ void	ft_printf_ext(char c, va_list args, int *ret)
 	if (c == 's')
 		ft_putstr(va_arg(args, char *), ret);
 	if (c == 'd' || c == 'i')
-		ft_putnbr(va_arg(args, long long), ret);
+		ft_putnbr(va_arg(args, int), ret);
 	if (c == 'u')
 		ft_putunbr(va_arg(args, unsigned int), ret);
 	if (c == 'x')
